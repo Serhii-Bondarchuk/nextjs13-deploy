@@ -8,37 +8,37 @@ type ProjectsType = {
 
 async function ProjectsList() {
   // const url = 'http://localhost:3000/api/projects';
-  // const url = '/api/projects';
+  const url = 'https://nextjs13-deploy.vercel.app/api/projects';
 
   const timeRevalidationCache = 10;
 
-  // const getAllProjects = async () => {
-  //   const response = await fetch(url, {
-  //     // cache: 'force-cache',
-  //     next: { revalidate: timeRevalidationCache },
-  //   });
-  //   return await response.json();
-  // };
+  const getAllProjects = async () => {
+    const response = await fetch(url, {
+      // cache: 'force-cache',
+      next: { revalidate: timeRevalidationCache },
+    });
+    return await response.json();
+  };
 
-  // const projectsList: ProjectsType[] = await getAllProjects();
+  const projectsList: ProjectsType[] = await getAllProjects();
 
-  const projectsList: ProjectsType[] = [
-    {
-      name: 'Project111',
-      description: 'Description111',
-      _id: '1',
-    },
-    {
-      name: 'Project222',
-      description: 'Description222',
-      _id: '2',
-    },
-    {
-      name: 'Project333',
-      description: 'Description333',
-      _id: '3',
-    },
-  ];
+  // const projectsList: ProjectsType[] = [
+  //   {
+  //     name: 'Project111',
+  //     description: 'Description111',
+  //     _id: '1',
+  //   },
+  //   {
+  //     name: 'Project222',
+  //     description: 'Description222',
+  //     _id: '2',
+  //   },
+  //   {
+  //     name: 'Project333',
+  //     description: 'Description333',
+  //     _id: '3',
+  //   },
+  // ];
 
   return (
     <div>
