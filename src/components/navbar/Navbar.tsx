@@ -35,7 +35,7 @@ function Navbar() {
         const activeClass = classNames({
           ['isActive']: isActive,
         });
-        console.log(activeClass, '3333333333');
+
         return (
           <li key={path} className={`${activeClass}`}>
             <Link href={path} className="hover_underline">
