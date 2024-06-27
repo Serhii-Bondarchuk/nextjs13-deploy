@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import './Navbar.css';
 import { navRoutes } from './utils/navRoutes';
 import { usePathname } from 'next/navigation';
+import { Button } from 'ui_lib_storybook';
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
