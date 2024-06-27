@@ -15,4 +15,21 @@ export async function GET(req: Request, res: Response) {
     }
     return NextResponse.json(error)
   }
+  // return NextResponse.json([
+  //   {
+  //     _id: '1',
+  //     name: 'First',
+  //     description: 'First description'
+  //   },
+  //   {
+  //     _id: '2',
+  //     name: 'Second',
+  //     description: 'First description'
+  //   },
+  //   {
+  //     _id: '3',
+  //     name: 'Third',
+  //     description: 'Third description'
+  //   }
+  // ])
 }

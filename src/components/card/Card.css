@@ -1,0 +1,9 @@
+.card {
+  background-color: aquamarine;
+  /* width: 200px; */
+  /* width: 32%; */
+  flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}

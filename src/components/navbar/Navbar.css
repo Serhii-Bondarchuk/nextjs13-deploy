@@ -6,7 +6,7 @@
   min-height: 70px;
   position: fixed;
   width: 100%;
-  gap: 0px;
+  gap: 10px;
   transition-delay: 0.5s;
   /* transition: all 0.5s; */
 }
