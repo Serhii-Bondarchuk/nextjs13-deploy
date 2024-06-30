@@ -50,8 +50,8 @@ export default function AccordionPage() {
         Node.js(express). I worked with database MySQL, I know PHP language, I
         worked a little bit with docker, have the experience to work Node.js (it
         was mostly on freelance and for my own education ). I opened to new
-        technology, I like to learn something new (I got Master's Degree from
-        Vinnitsya National Technical University). I worked with GitHub,
+        technology, I like to learn something new (I got Master&apos;s Degree
+        from Vinnitsya National Technical University). I worked with GitHub,
         bitbucket, Jira.
       </AccordionItem>
 
