@@ -18,8 +18,8 @@ async function ProjectsList() {
 
   const getAllProjects = async () => {
     const response = await fetch(url, {
-      // cache: 'force-cache',
-      next: { revalidate: timeRevalidationCache },
+      cache: 'force-cache',
+      // next: { revalidate: timeRevalidationCache },
     });
     return await response.json();
   };
