@@ -2,6 +2,7 @@ import ProjectCard from '@/components/card/Card';
 import React, { Suspense } from 'react';
 import './style.css';
 import { Typography } from '@mui/material';
+import Title from '@/components/title/Title';
 
 export type ProjectsType = {
   _id: string;
@@ -45,30 +46,11 @@ async function ProjectsList() {
 
   return (
     <>
-      <Typography
-        variant="h2"
-        className="letter_3d"
-        textAlign="center"
-        marginBottom="50px"
-      >
-        Projects List
-      </Typography>
+      <Title title="Projects List" />
       <div className="project_page">
         <Suspense fallback={<div>Loading...</div>}>
           {projectsList.map((project, index: number) => {
-            console.log(project, 777777777777777);
-            return (
-              // <div
-              //   key={project._id}
-              //   style={{
-              //     width: '25%',
-              //   }}
-              // >
-              <>
-                <ProjectCard project={project} />
-              </>
-              // </div>
-            );
+            return <ProjectCard project={project} key={project._id} />;
           })}
         </Suspense>
       </div>
@@ -77,12 +59,3 @@ async function ProjectsList() {
 }
 
 export default ProjectsList;
-
-// <h1>{project.name}</h1>
-// <h3>
-//   {index + 1}
-//   {'. '}
-//   {/* <Link href={`/projects/${project._id}`}> */}
-//   {project.description}
-//   {/* </Link> */}
-// </h3>

@@ -1,6 +1,5 @@
 import { dbConnect } from "@/lib/dbConnection";
 import { projectsModel } from "@/mongo/models/ProjectsModel";
-// import mongoose, { Types } from "mongoose";
 import { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
@@ -11,9 +10,6 @@ type ContextType = {
 }
 
 export async function GET(req: NextRequest, { params }: ContextType) {
-
-  // const objectId = mongoose.Schema.ObjectId
-
   const { projectId } = params
   try {
     await dbConnect()

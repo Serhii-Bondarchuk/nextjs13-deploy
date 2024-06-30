@@ -1,9 +1,33 @@
 .card {
   background-color: aquamarine;
-  /* width: 200px; */
-  /* width: 32%; */
   flex-wrap: wrap;
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
+}
+
+@media screen and (max-width: 420px) {
+  .card {
+    width: inherit;
+  }
+
+  .wrap_text {
+    max-width: 240px;
+    text-align: center;
+    margin: 0 auto;
+    word-break: break-word;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card {
+    width: inherit;
+  }
+
+  .wrap_text {
+    max-width: 240px;
+    text-align: center;
+    margin: 0 auto;
+    word-break: break-word;
+  }
 }

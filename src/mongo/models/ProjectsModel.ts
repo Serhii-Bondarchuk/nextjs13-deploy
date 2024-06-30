@@ -5,11 +5,6 @@ export interface IProjectModel extends Document {
   description: string;
 }
 
-// type ProjectModelType = {
-//   name: string;
-//   description: string;
-// } & Document
-
 const types = mongoose.Schema.Types
 
 const projectsSchema: Schema = new mongoose.Schema({
