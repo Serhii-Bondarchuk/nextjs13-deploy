@@ -25,3 +25,9 @@ h1 {
     3px 3px 2px rgba(0, 0, 0, 0.7), 1px 1px 2px rgba(0, 0, 0, 0.7),
     2px 4px 9px rgba(0, 0, 0, 0.7);
 }
+
+@media screen and (max-width: 500px) {
+  .letter_3d {
+    font-size: 50px;
+  }
+}

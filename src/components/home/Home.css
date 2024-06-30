@@ -1,0 +1,9 @@
+.home_card {
+  max-width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .home_card {
+    max-width: 80%;
+  }
+}

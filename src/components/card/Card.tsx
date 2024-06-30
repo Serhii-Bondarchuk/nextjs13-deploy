@@ -17,11 +17,10 @@ type ProjectCardType = {
 
 export default function ProjectCard({ project }: ProjectCardType) {
   const { description, name, _id } = project;
-
   return (
     <div className="card">
       <Card
-        sx={{ minWidth: 275 }}
+        sx={{ minWidth: 250 }}
         style={{
           width: '-webkit-fill-available',
         }}
@@ -35,7 +34,7 @@ export default function ProjectCard({ project }: ProjectCardType) {
           >
             Project name
           </Typography>
-          <Typography variant="h5" component="div">
+          <Typography variant="h5" component="div" className="wrap_text">
             {name}
           </Typography>
           <hr />
@@ -45,9 +44,6 @@ export default function ProjectCard({ project }: ProjectCardType) {
           <Typography variant="body2">{description}</Typography>
         </CardContent>
         <CardActions>
-          {/* <Button size="small">
-            <Link href={`/projects/${_id}`}>Learn More</Link>
-          </Button> */}
           <ButtonCard id={_id} />
         </CardActions>
       </Card>

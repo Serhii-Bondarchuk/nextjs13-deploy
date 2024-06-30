@@ -5,8 +5,8 @@ export const navRoutes = () => {
       name: 'Home',
     },
     {
-      path: '/about',
-      name: 'About',
+      path: '/profile',
+      name: 'Profile',
     },
     {
       path: '/projects',

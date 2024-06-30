@@ -3,17 +3,25 @@
 import { Button } from '@mui/material';
 import Link from 'next/link';
 import React from 'react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import path from 'path';
 
 function ButtonCard(props: { id: string }) {
+  const { back } = useRouter();
   const pathName = usePathname();
-  // console.log(pathName, 'tttttt');
-  const sss = path.parse(pathName);
-  // console.log(sss, 'sssss');
+  const { dir } = path.parse(pathName);
 
-  if (sss.dir === '/projects') {
-    return null;
+  if (dir === '/projects') {
+    return (
+      <Button
+        size="small"
+        variant="contained"
+        color="success"
+        onClick={() => back()}
+      >
+        Back
+      </Button>
+    );
   }
   return (
     <>
