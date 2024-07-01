@@ -15,6 +15,11 @@ const projectsSchema: Schema = new mongoose.Schema({
   description: {
     type: types.String,
     required: true,
+  },
+
+  url: {
+    type: types.String,
+    required: true,
   }
 })
 

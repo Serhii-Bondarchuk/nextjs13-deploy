@@ -14,7 +14,7 @@ async function ProjectsList() {
   // const url = 'http://localhost:3000/api/projects';
   const url = 'https://nextjs13-deploy.vercel.app/api/projects';
 
-  const timeRevalidationCache = 10;
+  // const timeRevalidationCache = 10;
 
   const getAllProjects = async () => {
     const response = await fetch(url, {
@@ -25,6 +25,8 @@ async function ProjectsList() {
   };
 
   const projectsList: ProjectsType[] = await getAllProjects();
+
+  console.log(projectsList, 444444);
 
   // const projectsList: ProjectsType[] = [
   //   {
