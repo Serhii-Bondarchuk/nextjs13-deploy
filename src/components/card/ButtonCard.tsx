@@ -7,20 +7,30 @@ import { usePathname, useRouter } from 'next/navigation';
 import path from 'path';
 
 function ButtonCard(props: { id: string }) {
-  const { back } = useRouter();
+  const { back, push } = useRouter();
   const pathName = usePathname();
   const { dir } = path.parse(pathName);
 
   if (dir === '/projects') {
     return (
-      <Button
-        size="small"
-        variant="contained"
-        color="success"
-        onClick={() => back()}
-      >
-        Back
-      </Button>
+      <>
+        <Button
+          size="small"
+          variant="contained"
+          color="success"
+          onClick={() => back()}
+        >
+          Back
+        </Button>
+        <Button
+          size="small"
+          variant="contained"
+          color="info"
+          onClick={() => push('/')}
+        >
+          Go to app
+        </Button>
+      </>
     );
   }
   return (
